@@ -98,6 +98,7 @@ form label {
 .form-group {
   display: flex;
   justify-content: space-between;
+  margin-top: 10px;
 }
 form select,
 form input {
@@ -213,5 +214,64 @@ footer p {
     margin: 10px 0 0 0;
     height: 50px;
     width: 150px;
+  }
+
+  /* -------  About ------- */
+  #about {
+    flex-direction: column;
+  }
+  #about .about-group {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #about img {
+    flex: 1;
+    width: 25%;
+    margin: 10px 10px 10px 0;
+  }
+
+  #about P {
+    flex: 2;
+    text-align: left;
+    align-self: center;
+  }
+
+  /* -------  Ideas ------- */
+  .ideas-group {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .ideas-item {
+    width: 49%;
+    margin: 0.5%;
+  }
+
+  #ideas img {
+    width: 100%;
+    margin: 0 0 10px 0;
+  }
+
+  /* -------  Host ------- */
+  #host {
+    flex-direction: row;
+  }
+  .host-group {
+    flex: 1;
+    width: 100%;
+    margin: auto;
+  }
+
+  #host h2 {
+    padding-top: 20px;
+  }
+  #host p {
+    text-align: left;
+  }
+
+  #host img {
+    flex: 1;
+    width: 100%;
+    margin: 10px;
   }
 }
