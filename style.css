@@ -120,6 +120,9 @@ form button {
   display: flex;
   flex-direction: column;
 }
+#about h2 {
+  padding-top: 20px;
+}
 #about img {
   width: 100%;
   margin: 10px 0 10px 0;
@@ -135,7 +138,9 @@ form button {
   display: flex;
   flex-direction: column;
 }
-
+#ideas h2 {
+  padding-top: 20px;
+}
 #ideas img {
   width: 100%;
   margin: 0 0 10px 0;
@@ -145,6 +150,9 @@ form button {
 #host {
   display: flex;
   flex-direction: column;
+}
+#host h2 {
+  padding-top: 20px;
 }
 #host p {
   text-align: left;
@@ -168,3 +176,42 @@ footer p {
 }
 
 /* -------  Media Query ------- */
+@media all and (min-width: 480px) {
+  /* -------  Navigation ------- */
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .logo {
+    font-size: 40px;
+  }
+  header nav ul {
+    margin: 10px 0 0 0;
+  }
+
+  /* -------  Stay ------- */
+  form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px 0 0;
+  }
+  form select,
+  form input {
+    width: 180px;
+    height: 25px;
+  }
+
+  form button {
+    font-size: 20px;
+    margin: 10px 0 0 0;
+    height: 50px;
+    width: 150px;
+  }
+}
